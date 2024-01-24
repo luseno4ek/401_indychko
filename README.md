@@ -6,15 +6,15 @@
 
 **Содержание:**
 1. [Сборка Nuget пакета](#nuget-build)
-2. [Работа тестового приложения `TestNugetPackage`](#test-app)
+2. [Работа тестового приложения TestNugetPackage](#test-app)
 3. [Интерфейс WPF приложения](#wpf)
 4. [Web приложение](#web)
 
 **Структура репозитория:**
 1. [ArcFaceApplications](https://github.com/luseno4ek/401_indychko/tree/master/ArcFaceApplications) - приложения для работы с нейросетью ArcFace
-  - [ArcFaceWebUI](https://github.com/luseno4ek/401_indychko/tree/master/ArcFaceApplications/ArcFaceWebUI) - Web приложение
-  - [WpfArcFace](https://github.com/luseno4ek/401_indychko/tree/master/ArcFaceApplications/WpfArcFace) - WPF приложение
-  - [WPFArcFaceApi](https://github.com/luseno4ek/401_indychko/tree/master/ArcFaceApplications/WPFArcFaceApi) - API, используемое WPF и Web приложениями (нейминг немного устарел..)
+    - [ArcFaceWebUI](https://github.com/luseno4ek/401_indychko/tree/master/ArcFaceApplications/ArcFaceWebUI) - Web приложение
+    - [WpfArcFace](https://github.com/luseno4ek/401_indychko/tree/master/ArcFaceApplications/WpfArcFace) - WPF приложение
+    - [WPFArcFaceApi](https://github.com/luseno4ek/401_indychko/tree/master/ArcFaceApplications/WPFArcFaceApi) - API, используемое WPF и Web приложениями (нейминг немного устарел..)
 2. [ArcFaceNuget](https://github.com/luseno4ek/401_indychko/tree/master/ArcFaceNuget) - библиотека для работы с ArcFace, публикующаяся в виде nuget-пакета
 3. [Faces](https://github.com/luseno4ek/401_indychko/tree/master/Faces) - набор тестовых изображений
 4. [TestNugetPackage](https://github.com/luseno4ek/401_indychko/tree/master/TestNugetPackage) - консольная утилита для проверки работоспособности nuget-пакета
