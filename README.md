@@ -6,9 +6,9 @@
 
 **Содержание:**
 1. [Сборка Nuget пакета](#nuget-build)
-2. <a name="test-app"> Работа тестового приложения `TestNugetPackage` </a>
-3. <a name="wpf">Интерфейс WPF приложения</a>
-4. <a name="web">Web приложение</a>
+2. [Работа тестового приложения `TestNugetPackage`](#test-app)
+3. [Интерфейс WPF приложения](#wpf)
+4. [Web приложение](#web)
 
 **Структура репозитория:**
 1. [ArcFaceApplications](https://github.com/luseno4ek/401_indychko/tree/master/ArcFaceApplications) - приложения для работы с нейросетью ArcFace
@@ -21,7 +21,7 @@
 
 ---
 
-## <a name="nuget-build">[Сборка Nuget пакета]</a>
+## <a name="nuget-build">Сборка Nuget пакета</a>
 1. Скачать [нейронную сеть ArcFace](https://github.com/onnx/models/blob/main/vision/body_analysis/arcface/model/arcfaceresnet100-8.onnx).
 2. Скачать папку `ArcFaceNuget` из текущего репозитория. 
 3. Выполнить в папке `ArcFaceNuget` команду 
@@ -51,7 +51,7 @@ dotnet add package ArcFaceNuget
 ```
 5. В проекте использовать API с помощью `using ArcFaceNuget;`
 
-## [Работа тестового приложения `TestNugetPackage`](#test-app)
+## <a name="test-app">Работа тестового приложения `TestNugetPackage`</a>
 После подключения пакета ArcFaceNuget программа вычисляет сходства и различия между двумя тестовыми изображениями. Результат выводится в консоль в виде двух матриц Distance и Similarity:
 ```
 Distance Matrix
@@ -74,7 +74,7 @@ Similarity matrix
 Task<(float[,], float[,])> GetDistanceAndSimilarity(Image<Rgb24>[] images, CancellationToken token)
 ```
 ---
-## [Интерфейс WPF приложения](#wpf)
+## <a name="wpf">Интерфейс WPF приложения</a>
 
 ### Пример работы WPF приложения без базы данных
 ![WPF example](https://i.postimg.cc/Wb7yqysB/2022-10-31-035232.jpg)
@@ -83,7 +83,7 @@ Task<(float[,], float[,])> GetDistanceAndSimilarity(Image<Rgb24>[] images, Cance
 ![WPF with DB example](https://i.postimg.cc/Y283SWgG/image.png)
 
 ---
-## [Web приложение](#web)
+## <a name="web">Web приложение</a>
 
 ### Выставленное API для работы с базой данных и использования нейросети ArcFace.
 ![WPF Web Api](https://i.postimg.cc/J7j77yqC/api.jpg)
