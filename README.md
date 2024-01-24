@@ -1,7 +1,28 @@
-# Лабораторная работа №1 
-## Вариант 1
+# ArcFace Applications
 
-### Сборка Nuget пакета
+Реализация WPF и Web приложений для работы с [нейросетью ArcFace](https://github.com/onnx/models/blob/main/vision/body_analysis/arcface/model/arcfaceresnet100-8.onnx), позволяющей сравнивать лица людей.
+
+**Используемые технологии:** `.net6.0`, `nuget`, `WPF`, `AngularTS`, `SQLite`, `Polly`, `SixLabors`.
+
+**Содержание:**
+1. <a name="nuget-build"> Сборка Nuget пакета</a>
+2. <a name="test-app"> Работа тестового приложения `TestNugetPackage` </a>
+3. <a name="wpf">Интерфейс WPF приложения</a>
+4. <a name="web">Web приложение</a>
+
+**Структура репозитория:**
+1. [ArcFaceApplications](https://github.com/luseno4ek/401_indychko/tree/master/ArcFaceApplications) - приложения для работы с нейросетью ArcFace
+  - [ArcFaceWebUI](https://github.com/luseno4ek/401_indychko/tree/master/ArcFaceApplications/ArcFaceWebUI) - Web приложение
+  - [WpfArcFace](https://github.com/luseno4ek/401_indychko/tree/master/ArcFaceApplications/WpfArcFace) - WPF приложение
+  - [WPFArcFaceApi](https://github.com/luseno4ek/401_indychko/tree/master/ArcFaceApplications/WPFArcFaceApi) - API, используемое WPF и Web приложениями (нейминг немного устарел..)
+2. [ArcFaceNuget](https://github.com/luseno4ek/401_indychko/tree/master/ArcFaceNuget) - библиотека для работы с ArcFace, публикующаяся в виде nuget-пакета
+3. [Faces](https://github.com/luseno4ek/401_indychko/tree/master/Faces) - набор тестовых изображений
+4. [TestNugetPackage](https://github.com/luseno4ek/401_indychko/tree/master/TestNugetPackage) - консольная утилита для проверки работоспособности nuget-пакета
+
+— — —
+
+
+## [Сборка Nuget пакета](#nuget-build)
 1. Скачать [нейронную сеть ArcFace](https://github.com/onnx/models/blob/main/vision/body_analysis/arcface/model/arcfaceresnet100-8.onnx).
 2. Скачать папку `ArcFaceNuget` из текущего репозитория. 
 3. Выполнить в папке `ArcFaceNuget` команду 
@@ -31,7 +52,7 @@ dotnet add package ArcFaceNuget
 ```
 5. В проекте использовать API с помощью `using ArcFaceNuget;`
 
-### Работа тестового приложения `TestNugetPackage`
+## [Работа тестового приложения `TestNugetPackage`](#test-app)
 После подключения пакета ArcFaceNuget программа вычисляет сходства и различия между двумя тестовыми изображениями. Результат выводится в консоль в виде двух матриц Distance и Similarity:
 ```
 Distance Matrix
@@ -53,19 +74,19 @@ Similarity matrix
 /// </returns>
 Task<(float[,], float[,])> GetDistanceAndSimilarity(Image<Rgb24>[] images, CancellationToken token)
 ```
+— — —
 
-# Лабораторная работа №2 
-## Вариант 1Б
+## [Интерфейс WPF приложения](#wpf)
 
-### Пример работы приложения
+### Пример работы WPF приложения без базы данных
 ![WPF example](https://i.postimg.cc/Wb7yqysB/2022-10-31-035232.jpg)
 
-# Лабораторная работа №3
-
-### Пример работы приложения
+### Пример работы WPF приложения с базой данных
 ![WPF with DB example](https://i.postimg.cc/Y283SWgG/image.png)
 
-# Лабораторная работа №4
+— — —
+
+## [Web приложение](#web)
 
 ### Выставленное API для работы с базой данных и использования нейросети ArcFace.
 ![WPF Web Api](https://i.postimg.cc/J7j77yqC/api.jpg)
