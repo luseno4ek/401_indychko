@@ -19,8 +19,7 @@
 3. [Faces](https://github.com/luseno4ek/401_indychko/tree/master/Faces) - набор тестовых изображений
 4. [TestNugetPackage](https://github.com/luseno4ek/401_indychko/tree/master/TestNugetPackage) - консольная утилита для проверки работоспособности nuget-пакета
 
-— — —
-
+---
 
 ## [Сборка Nuget пакета](#nuget-build)
 1. Скачать [нейронную сеть ArcFace](https://github.com/onnx/models/blob/main/vision/body_analysis/arcface/model/arcfaceresnet100-8.onnx).
@@ -74,8 +73,7 @@ Similarity matrix
 /// </returns>
 Task<(float[,], float[,])> GetDistanceAndSimilarity(Image<Rgb24>[] images, CancellationToken token)
 ```
-— — —
-
+---
 ## [Интерфейс WPF приложения](#wpf)
 
 ### Пример работы WPF приложения без базы данных
@@ -84,8 +82,7 @@ Task<(float[,], float[,])> GetDistanceAndSimilarity(Image<Rgb24>[] images, Cance
 ### Пример работы WPF приложения с базой данных
 ![WPF with DB example](https://i.postimg.cc/Y283SWgG/image.png)
 
-— — —
-
+---
 ## [Web приложение](#web)
 
 ### Выставленное API для работы с базой данных и использования нейросети ArcFace.
