@@ -5,7 +5,7 @@
 **Используемые технологии:** `.net6.0`, `nuget`, `WPF`, `AngularTS`, `SQLite`, `Polly`, `SixLabors`.
 
 **Содержание:**
-1. <a name="nuget-build"> Сборка Nuget пакета</a>
+1. [Сборка Nuget пакета](#nuget-build)
 2. <a name="test-app"> Работа тестового приложения `TestNugetPackage` </a>
 3. <a name="wpf">Интерфейс WPF приложения</a>
 4. <a name="web">Web приложение</a>
@@ -21,7 +21,7 @@
 
 ---
 
-## [Сборка Nuget пакета](#nuget-build)
+## <a name="nuget-build">[Сборка Nuget пакета]</a>
 1. Скачать [нейронную сеть ArcFace](https://github.com/onnx/models/blob/main/vision/body_analysis/arcface/model/arcfaceresnet100-8.onnx).
 2. Скачать папку `ArcFaceNuget` из текущего репозитория. 
 3. Выполнить в папке `ArcFaceNuget` команду 
